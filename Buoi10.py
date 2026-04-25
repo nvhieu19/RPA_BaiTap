@@ -31,7 +31,7 @@ URL = "https://www.phatnguoixe.com/"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_LOGIN = "trickerhiuml@gmail.com"
-EMAIL_PASSWORD = "wstw ejds acvt iljh"
+EMAIL_PASSWORD = "xxx-xxx-xxx-xxx"
 SENDER_EMAIL = "trickerhiuml@gmail.com"
 RECEIVER_EMAIL = "trickerhiuml@gmail.com"
 

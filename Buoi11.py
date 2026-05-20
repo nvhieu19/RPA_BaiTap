@@ -1,8 +1,3 @@
-# =============================================================
-# BÀI TẬP RPA: BOT MUA HÀNG TỰ ĐỘNG
-# Buổi 11 - Python + Selenium + SMTP Email
-# Website: https://www.automationexercise.com
-# =============================================================
 
 import time
 import sys
@@ -22,19 +17,17 @@ from selenium.webdriver.common.action_chains import ActionChains
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ======================== CẤU HÌNH ========================
+BASE_URL = "https://automationexercise.com"
+LOGIN_EMAIL = "trickerhiuml@gmail.com"
+LOGIN_PASSWORD = "hieun91prd"
+SEARCH_KEYWORD = "T-Shirt"
 
-BASE_URL       = "https://www.automationexercise.com"
-LOGIN_EMAIL    = "xxxxx"       # Email đăng ký tài khoản
-LOGIN_PASSWORD = "xxxxx"
-
-SMTP_SERVER    = "smtp.gmail.com"
-SMTP_PORT      = 587
-EMAIL_LOGIN    = "xxxxx"
-EMAIL_PASSWORD = "xxxxx"     # App password từ pass app.txt
-SENDER_EMAIL   = "xxxxx"
-RECEIVER_EMAIL = "xxxxx"
-
-SEARCH_KEYWORD = "shirt"
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
+EMAIL_LOGIN = "trickerhiuml@gmail.com"
+EMAIL_PASSWORD = "tfbq sfxs gjlc rglf"
+SENDER_EMAIL = "trickerhiuml@gmail.com"
+RECEIVER_EMAIL = "vanhieu.prod@gmail.com"
 
 # Thông tin thanh toán giả
 FAKE_CARD = {
@@ -489,8 +482,8 @@ def main():
         driver.quit()
         print("🔒 Đã đóng trình duyệt.")
 
-
 # ======================== CHẠY CHƯƠNG TRÌNH ========================
 
 if __name__ == "__main__":
     main()
+

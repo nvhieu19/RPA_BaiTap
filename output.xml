@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-05-20T17:41:06.734268" rpa="false" schemaversion="5">
+<suite id="s1" name="Buoi12" source="C:\Users\Hieu\Desktop\RPA_BaiTap\Buoi12.robot">
+<test id="s1-t1" name="Valid Login Test" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-20T17:41:06.916616" level="INFO">Opening browser 'Edge' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-20T17:41:06.916616" elapsed="20.107323"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-20T17:41:27.024259" elapsed="0.033826"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-20T17:41:27.167534" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-20T17:41:27.168542" level="FAIL">Title should have been 'The Internet' but was 'Application Error'.</msg>
+<arg>The Internet</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2026-05-20T17:41:27.058085" elapsed="0.111870">Title should have been 'The Internet' but was 'Application Error'.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:27.169955" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:27.169955" elapsed="0.001018"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:27.170973" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:27.170973" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:27.170973" elapsed="0.000000"/>
+</kw>
+<doc>Kiểm tra màn hình xuất hiện nội dung đăng nhập thành công</doc>
+<status status="FAIL" start="2026-05-20T17:41:06.916616" elapsed="20.254357">Title should have been 'The Internet' but was 'Application Error'.</status>
+</test>
+<test id="s1-t2" name="Invalid Login Test" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-20T17:41:27.172972" level="INFO">Opening browser 'Edge' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-20T17:41:27.172972" elapsed="8.419007"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2026-05-20T17:41:35.596983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7aca88bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7ac41dadd]
+	msedgedriver!(No symbol) [0x7ff7ac4a88cc]
+	msedgedriver!(No symbol) [0x7ff7ac4be9bf]
+	msedgedriver!(No symbol) [0x7ff7ac47a2ec]
+	msedgedriver!(No symbol) [0x7ff7ac479546]
+	msedgedriver!(No symbol) [0x7ff7ac47a113]
+	msedgedriver!(No symbol) [0x7ff7ac542519]
+	msedgedriver!(No symbol) [0x7ff7ac53ec93]
+	msedgedriver!(No symbol) [0x7ff7ac54f182]
+	msedgedriver!GetHandleVerifier [0x7ff7ac72aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7ac7332f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac702b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd45be957+17]
+	ntdll!RtlUserThreadStart [0x7ffdd4d0427c+2c]
+</msg>
+<msg time="2026-05-20T17:41:35.596983" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7aca88bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7ac41dadd]
+	msedgedriver!(No symbol) [0x7ff7ac4a88cc]
+	msedgedriver!(No symbol) [0x7ff7ac4be9bf]
+	msedgedriver!(No symbol) [0x7ff7ac47a2ec]
+	msedgedriver!(No symbol) [0x7ff7ac479546]
+	msedgedriver!(No symbol) [0x7ff7ac47a113]
+	msedgedriver!(No symbol) [0x7ff7ac542519]
+	msedgedriver!(No symbol) [0x7ff7ac53ec93]
+	msedgedriver!(No symbol) [0x7ff7ac54f182]
+	msedgedriver!GetHandleVerifier [0x7ff7ac72aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7ac7332f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac702b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd45be957+17]
+	ntdll!RtlUserThreadStart [0x7ffdd4d0427c+2c]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2026-05-20T17:41:35.593961" elapsed="0.003022">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7aca88bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7ac41dadd]
+	msedgedriver!(No symbol) [0x7ff7ac4a88cc]
+	msedgedriver!(No symbol) [0x7ff7ac4be9bf]
+	msedgedriver!(No symbol) [0x7ff7ac47a2ec]
+	msedgedriver!(No symbol) [0x7ff7ac479546]
+	msedgedriver!(No symbol) [0x7ff7ac47a113]
+	msedgedriver!(No symbol) [0x7ff7ac542519]
+	msedgedriver!(No symbol) [0x7ff7ac53ec93]
+	msedgedriver!(No symbol) [0x7ff7ac54f182]
+	msedgedriver!GetHandleVerifier [0x7ff7ac72aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7ac7332f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac702b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd45be957+17]
+	ntdll!RtlUserThreadStart [0x7ffdd4d0427c+2c]
+</status>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>The Internet</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:35.596983" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>invalid_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:35.596983" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>invalid_pass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:35.596983" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:35.596983" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your username is invalid!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:35.596983" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-20T17:41:35.596983" elapsed="0.000000"/>
+</kw>
+<doc>Kiểm tra màn hình đăng nhập thất bại</doc>
+<status status="FAIL" start="2026-05-20T17:41:27.171973" elapsed="8.425010">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7aca88bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7ac41dadd]
+	msedgedriver!(No symbol) [0x7ff7ac4a88cc]
+	msedgedriver!(No symbol) [0x7ff7ac4be9bf]
+	msedgedriver!(No symbol) [0x7ff7ac47a2ec]
+	msedgedriver!(No symbol) [0x7ff7ac479546]
+	msedgedriver!(No symbol) [0x7ff7ac47a113]
+	msedgedriver!(No symbol) [0x7ff7ac542519]
+	msedgedriver!(No symbol) [0x7ff7ac53ec93]
+	msedgedriver!(No symbol) [0x7ff7ac54f182]
+	msedgedriver!GetHandleVerifier [0x7ff7ac72aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7ac7332f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac702b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd45be957+17]
+	ntdll!RtlUserThreadStart [0x7ffdd4d0427c+2c]
+</status>
+</test>
+<status status="FAIL" start="2026-05-20T17:41:06.734268" elapsed="28.868234"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Buoi12" id="s1" pass="0" fail="2" skip="0">Buoi12</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-20T17:41:35.596983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac70e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7aca88bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7ac41dadd]
+	msedgedriver!(No symbol) [0x7ff7ac4a88cc]
+	msedgedriver!(No symbol) [0x7ff7ac4be9bf]
+	msedgedriver!(No symbol) [0x7ff7ac47a2ec]
+	msedgedriver!(No symbol) [0x7ff7ac479546]
+	msedgedriver!(No symbol) [0x7ff7ac47a113]
+	msedgedriver!(No symbol) [0x7ff7ac542519]
+	msedgedriver!(No symbol) [0x7ff7ac53ec93]
+	msedgedriver!(No symbol) [0x7ff7ac54f182]
+	msedgedriver!GetHandleVerifier [0x7ff7ac72aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7ac7332f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7ac715845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7ac702b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd45be957+17]
+	ntdll!RtlUserThreadStart [0x7ffdd4d0427c+2c]
+</msg>
+</errors>
+</robot>
